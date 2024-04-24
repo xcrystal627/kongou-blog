@@ -1,0 +1,665 @@
+.detail {
+    .detail-header {
+        background: rgba(0, 0, 0, 0.6);
+        padding: min(50px, 50rem) min(40px, 40rem);
+        @include md {
+            padding: 20px;
+        }
+        .detail-category {
+            padding: min(7px,7rem) min(16px,16rem);
+            border-radius: 25px;
+            letter-spacing: 0;
+            background: #FFC43E;
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-weight: normal;
+            font-size: min(14px, 14rem);
+            line-height: min(24px, 24rem);
+            // line-height: min(18px, 18rem);
+            cursor: pointer;
+            color: #333;       
+            @include md {
+                padding: 5px 14px;
+                font-size: 13px;
+                line-height: 20px;
+            }              
+        }
+        .detail-ttl {
+            margin-top: 10px;
+            color: #fff;
+            font-size: min(32px, 34rem);
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-weight: normal;
+            line-height: min(38px,40rem);
+            @include md {
+                margin-top: 15px;
+                font-size: 22px;
+                line-height: 33px;
+            }
+        }
+        .detail-info {
+            margin-top: min(60px, 60rem);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @include md {
+                margin-top: 45px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .detail-date {
+                font-size: min(14px, 14rem);;
+                color: #FFC43E;
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-weight: normal;
+                &__created {
+                    // font-size: 14px;
+                    // color: #FFC43E;
+                    // font-family: "Hiragino Kaku Gothic ProN";
+                    // font-weight: normal;
+                }
+                &__updated {
+                    margin-left: 5px;
+                }
+                @include md {
+                    font-size: 12px;
+                }
+            }
+            .detail-tag__list {
+                margin-left: min(50px, 50rem);
+                @include md {
+                    margin-left: -14px;
+                    margin-top: 10px;
+                }
+                .detail-tag {   
+                    padding: 2px 5px;
+                    margin-left: min(10px, 10rem);
+                    border: 1px solid #FFC43E;
+                    font-size: min(14px, 14rem);;       
+                    color: #FFC43E;         
+                    font-weight: normal;
+                    font-family: "Hiragino Kaku Gothic ProN";
+                    @include md {
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.column-content {
+    background: #fff;
+    padding: min(40rem, 40px);
+    @include md {
+        padding: 15px 20px;
+    }
+    p {
+        font-size: min(14px, 20rem);
+        line-height: min(25px, 35rem);
+        @include md {
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+    .content {
+        margin-top: min(40rem, 40px);
+        @include md {
+            margin-top: 30px;
+        }
+        &-ttl {
+            background: #333333;
+            color: #FFC43E;
+            padding: min(10px, 10rem) min(25px, 25rem);
+            font-size: min(18px, 18rem);
+            @include md {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+        }
+        &-body {
+            border: 3px solid #000;
+            border-top: none;
+            padding: min(20px, 20rem) min(25px, 25rem);
+            h2 {
+                margin-bottom: min(10px, 10rem);
+                font-size: min(14px, 14rem);
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-weight: normal;             
+                background: none; 
+                @include md {
+                    font-size: 14px;
+                }  
+            }
+            h3 {
+                padding-left: min(30rem, 30px);
+                margin-bottom: min(10px, 10rem);
+                font-size: min(14px, 14rem);
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-weight: normal;
+                @include md {
+                    font-size: 14px;
+                }  
+            }
+        }
+
+    }
+    .description {
+        margin-top: min(50px, 50rem);
+
+        h2 {
+            margin-top: 5px;
+            padding: min(5px, 5rem) min(15px, 15rem) ;
+            font-size: min(24px, 24rem);
+            color: #000;
+            background: #FFC43E;
+            display: table;
+            @include md {
+                font-size: 20px;
+                padding: 5px 10px;
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-size: min(22px, 22rem);
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-weight: normal;
+            color: #F30D15;
+            border-left: 3px solid #F30D15;
+            padding-left: 15px;
+            @include md {
+                font-size: 18px;
+            }  
+        }
+        h4 {
+            position: relative;
+            font-size: min(18px, 18rem);
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-weight: normal;
+            color: #F30D15;
+            @include md {
+                font-size: 14px;
+            }  
+        }
+        img {
+            margin: 0 auto;
+            width: min(476px, 476rem);
+            @include md {
+                width: 70%;
+            }
+        }
+
+        ul {         
+            padding-left: min(20px, 20rem);   
+            @include md {
+                padding-left: 20px;
+            }
+
+            li {
+                color: #000;
+                font-size: min(14px, 14rem);
+                line-height: min(25rem, 25px);
+                position: relative;
+                @include md {
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }   
+
+            li::before {
+                position: absolute;
+                content: " ";
+                width: min(12px, 12rem);
+                height: min(12px, 12rem);
+                border-radius: 50%;
+                background-color: #FFC43E;
+                left: max(-20px, -20rem);   
+                top: 50%;
+                transform: translateY(-50%);
+                @include md {
+                    width: 10px;
+                    height: 10px;
+                    left: -20px;
+                }
+            }
+        }
+        
+        ol {
+            padding-left: min(40px, 40rem);    
+            @include md {
+                padding-left: 30px;
+            }
+            li {
+                font-size: min(14px, 14rem);
+                line-height: min(35px, 35rem);
+                position: relative;
+                @include md {
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }   
+            .num {
+                position: absolute;
+                font-size: min(19px, 19rem);
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center ;
+                width: min(30px, 30rem);
+                height: min(30px, 30rem);
+                border-radius: 50%;
+                background-color: #FFC43E;
+                left: max(-40px, -40rem);   
+                top: 50%;
+                transform: translateY(-50%);
+                @include md {
+                    width: 20px;
+                    height: 20px;
+                    left: -30px;
+                    font-size: 12px;
+                }
+            }
+            li.num1::before {
+                @extend .num;
+                content: "1";
+            }
+
+            li.num2::before {
+                @extend .num;
+                content: "2";
+            }
+            li.num3::before {
+                @extend .num;
+                content: "3";
+            }
+            li.num4::before {
+                @extend .num;
+                content: "4";
+            }
+            li.num5::before {
+                @extend .num;
+                content: "5";
+            }
+            
+        }
+        blockquote {
+            border: 3px solid #000 ;
+            padding: min(33px, 33rem) min(43px, 43rem);
+            @include md {
+                padding: 18px 24px;
+            }
+        }
+        cite {
+            color: red;
+            font-size: min(14px, 14rem);
+            text-decoration: underline;
+            @include md {
+                font-size: 14px;
+            }
+        }
+        .author {
+            text-align: right;
+            font-size: min(14px, 14rem);
+            line-height: min(25px, 25rem);
+            @include md {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+        .point-title {
+            background: #F30D15;
+            color: #fff;
+            font-size: min(18px, 18rem);
+            padding: min(10px, 10rem) min(25px, 25rem);
+            @include md {
+                font-size: 16px;
+                padding: 8px 18px;
+            }
+        }
+        .point-block {
+            background: #EEEEEE;
+            margin-top: min(10px, 10rem);
+            padding: min(25px, 25rem) min(30px, 30rem);
+            font-size: min(14px, 14rem);
+            line-height: min(25px, 25rem);
+            @include md {
+                font-size: 14px;
+                line-height: 25px;
+                margin-top: 5px;
+            }  
+        }
+        table {
+            width: 100%;
+            border: 1px solid #575757;
+            th {
+                background: #333333;
+                border: 1px solid #575757;
+                padding: min(10px, 10rem)  min(25px, 25rem);
+                font-size:  min(18px, 18rem);
+                color: #fff;
+                text-align: left;
+                @include md {
+                    font-size: 14px;
+                    padding: 7px 13px;
+                }
+            }
+            td {
+                border: 1px solid #575757;
+                padding: min(15px, 15rem) min(25px, 25rem);
+                font-size: min(14px, 14rem);
+                line-height: min(25px, 25rem);
+                @include md {
+                    font-size: 14px;
+                    line-height: 25px;
+                    padding: 9px 15px;
+                }
+            }
+        }
+    }
+    .button-pack {
+        margin-top: min(60px, 60rem);
+        display: flex;
+        justify-content: center;
+        .detail-btn {
+            display: inline-flex;
+            border-radius: 30px;
+            background: #F30D15;
+            color: #fff;
+            font-size: min(18px, 18rem);
+            text-align: center;
+            padding: min(18px, 18rem) min(105px, 105rem);
+            @include sp {
+                display: unset;
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+    .under-line {
+        margin-top:  min(45px, 45rem);
+        border: 1px solid #CCCCCC;
+    }
+    .share {
+        margin-top:  min(30px, 30rem);
+        text-align: center;
+        font-size: min(14px, 14rem);
+        line-height: min(25px, 25rem);
+        @include md {
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+    .share-links {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        column-gap: min(10px, 10rem);
+        .fa-facebook {
+            background: #4676E2;
+            width: min(40px, 40rem);
+            height: min(40px, 40rem);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include md {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .fa-twitter {
+            background-color: #78A9E2;
+            width: min(40px, 40rem);
+            height: min(40px, 40rem);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include md {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .fa-square-b {
+            background-color: #60A1D1;
+            width: min(40px, 40rem);
+            height: min(40px, 40rem);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include md {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .introduction-list {
+        margin-top: min(40px, 40rem);
+        display: flex;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        column-gap: min(30px, 30rem);
+        padding-top: min(20px, 20rem);
+        row-gap: 20px;
+        @include md {
+            flex-direction: column;
+            align-content: center;
+        }
+        .introduction-item {
+            display: flex;
+            justify-content: center;
+            border: 1px solid #CCCCCC;
+            padding: 15px 0;
+            .author-info-img {
+                width: 40%;
+                // margin-right: min(20px, 20rem);
+                // @include md {
+                //     margin-right: 10px;
+                // }
+
+                .author-info {
+                    display: flex;
+                    align-items: center;
+                    font-size: min(14px, 14rem);
+                    line-height: min(25px, 25rem);
+                    @include md {
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                    .yellow-line {
+                        border: 3px solid #FFC43E;   
+                        width: min(20px, 20rem);   
+                        margin-right:  min(10px, 105rem);  
+                        height: 3px;  
+                        @include md {
+                            margin-right: 10px;
+                            width: 20px;
+                        }         
+                    }
+                }
+                
+                .author-img__pack {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .author-img {
+                    margin: min(30px, 30rem) min(20px, 20rem);
+                    border-radius: 50%;
+                    width: min(80px, 80rem);
+                    height: min(80px, 80rem);
+                    @include md {
+                        margin: 20px 20px;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+            .introduction-desc {
+                width: 60%;
+                padding-right: min(20px, 20rem);
+                @include md {
+                    padding-right: 10px;
+                }
+                &__ttl {
+                    font-size: min(18px, 18rem);
+                    @include md {
+                        font-size: 14px;
+                    }
+                }
+                &__subttl {
+                    font-size: min(14px, 14rem);
+                    color: #F30D15;
+                    @include md {
+                        font-size: 12px;
+                    }
+                }
+                &__desc {
+                    font-size: min(12px, 12rem);
+                    line-height: min(20px, 20rem);
+                    @include md {
+                        font-size: 10px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.pre-next-buttons {
+    margin-top: min(35px, 35rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    column-gap: min(50px, 50rem);
+    .btn {
+        background: #FFC43E;
+        font-size: 13px;
+        width: min(250px, 250rem);
+        height: min(50px, 50rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @include md {
+            width: 160px;
+            height: 40px;
+        }
+    }
+    .arrow {
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: min(5px, 5rem);
+        @include md {
+            padding: 5px;
+        }
+    }
+    
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    .btn-prev {
+        @extend .btn;
+    }
+    .btn-prev::before {
+        position: absolute;
+        content: " ";
+        @extend .arrow;
+        @extend .left;
+        left: min(20px, 20rem);
+        @include md {
+            left: 20px
+        }
+    }
+    
+    .btn-next {
+        @extend .btn;
+    }
+    .btn-next::before {
+        position: absolute;
+        content: " ";
+        @extend .arrow;
+        @extend .right;
+        right: min(20px, 20rem);
+        @include md {
+            right: 20px
+        }
+    }
+}
+
+
+.sec-recommend {
+    background: #333333;
+    padding-bottom: 70px;
+    @include md {
+        padding-bottom: 35px;
+    }
+    .ttl-underline {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        font-family: "Roboto Condensed";
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        color: #fff;
+    }
+
+    .jp-ttl {
+        text-align: center;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        padding: 5px 14px;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #f30d15;
+        display: block;
+    }
+    .item-list {
+        margin-top: min(50px, 50rem);
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        column-gap: min(50px, 50rem);
+        @include md {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0,1fr));
+            column-gap: 20px;
+        }
+        .item-rtr {
+            width: 100%;
+        }
+    }
+}
+
+
+.pc-only {
+    @include md {
+        display: none;
+    }
+}
+
+.pc-none {
+    display: none;
+    @include md {
+        display: block;
+    }
+}

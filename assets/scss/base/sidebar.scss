@@ -1,0 +1,78 @@
+.sidebar {
+    padding-left: min(70px, 70rem);
+    width: max(calc(100% - 820rem), calc(100% - 820px));
+    max-width: 400px;
+    @include md {
+        padding-left: 0;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .graybox {
+        background: #6F6F6F;
+        width: 100%;
+        height: min(224px, 224rem);
+        @include md {
+            height: 224px;
+        }
+    }
+
+    .side-ttl {
+        margin-top: 45px;
+        color: #fff; 
+        border-bottom: 2px solid #fff;
+        padding-bottom: 15px ;
+        text-align: center;
+        h2 {
+            font-family: "Roboto Condensed";
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 34px;
+            letter-spacing: 0.02em; 
+        }
+        .jp-ttl {
+            font-family: "Hiragino Sans";
+            font-weight: normal;
+            padding: 5px 14px ;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.02em; 
+            color: #f30d15;
+            display: block;
+        }
+    }
+    .category-list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .category-item {
+            padding: 7px 20px;
+            border-radius: 25px;
+            letter-spacing: 0;
+            background: #FFC43E;
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;   
+            cursor: pointer;
+        }
+        .category-item:hover {
+            opacity: 0.8;
+        }
+        .mr-20 {
+            margin-right: 20px;
+        }
+    }
+    .side-rankig {
+        .item-ranking {
+            @extend .item-ranking;   
+        }
+    }
+    .new-list {
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0,1fr));
+            column-gap: 20px;
+        }
+    }
+}
